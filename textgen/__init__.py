@@ -1,1 +1,1 @@
-from .textgenrnn import textgenrnn
+from .textgen import textgenrnn
