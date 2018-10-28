@@ -1,3 +1,4 @@
+import unidecode
 import string
 import time
 import math
@@ -9,7 +10,7 @@ n_characters = len(all_characters)
 
 def read_file(filename):
     """Read input data"""
-    data = open(filename).read().split()
+    data = unidecode.unidecode(open(filename).read())
     chars = list(set(data))
     data_size, vocab_size = len(data), len(chars)
 

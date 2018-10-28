@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
-class RNN(nn.module):
+class RNN(nn.Module):
     def __init__(self, input_size, hidden_size, output_size, n_layers=2):
         super(RNN, self).__init__()
         self.input_size = input_size
