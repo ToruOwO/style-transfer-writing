@@ -1,0 +1,14 @@
+Server: Cowboy
+Date: Tue, 30 Oct 2018 03:23:54 GMT
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Type: text/plain; charset=utf-8
+Etag: W/"c934c6202f6753c8988b1684da2be960"
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: _lc3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWExYTU2Njk3YzRlZjRlZDg0MDZhMWRhMDY0ZGI4NzNiBjsAVEkiEnByZXZpb3VzX3BhdGgGOwBGSSIQL3JvYm90cy50eHQGOwBU--7253518e668c54c9da3d980c3457c50d81f36135; path=/; secure; HttpOnly
+X-Request-Id: 59327a86-0638-47c9-91ae-461ba1d6ffa6
+X-Runtime: 0.023802
+Vary: Accept-Encoding, Origin
+Content-Encoding: gzip
+Via: 1.1 vegur
