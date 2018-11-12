@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bccd56c-1b2d-4992-9db4-dd3a1e4247ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/textgen/AttentionWeightedAverage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/textgen/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/textgen/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/textgen/model_training.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/textgen/textgen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/textgen/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/style-transfer-writing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/style-transfer-writing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/oscar_wilde.txt" beforeDir="false" afterPath="$PROJECT_DIR$/min-char-rnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/oscar_wilde_lines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/oscar_wilde_lines.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/shakespeare.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_interface.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_interface.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,31 +16,36 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="1" />
+          <entry key="html" value="1" />
           <entry key="py" value="12" />
           <entry key="txt" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="HTML" value="1" />
           <entry key="PLAIN_TEXT" value="37" />
           <entry key="Python" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="html" value="135" />
           <entry key="py" value="2211" />
           <entry key="txt" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="135" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="Python" value="2211" />
         </counts>
@@ -58,13 +54,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/min-char-rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="99" column="32" lean-forward="true" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
+            <state relative-caret-position="345">
+              <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web_interface.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding>
-                <marker date="1540146404000" expanded="true" signature="929:934" ph="..." />
+                <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,7 +81,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/oscar_wilde_lines.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3064">
+            <state relative-caret-position="150">
               <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
             </state>
           </provider>
@@ -152,6 +160,7 @@
         <option value="$PROJECT_DIR$/textgen/__init__.py" />
         <option value="$PROJECT_DIR$/textgen/model.py" />
         <option value="$PROJECT_DIR$/min-char-rnn.py" />
+        <option value="$PROJECT_DIR$/web_interface.html" />
       </list>
     </option>
   </component>
@@ -208,8 +217,7 @@
             <path>
               <item name="style-transfer-writing" type="b2602c69:ProjectViewProjectNode" />
               <item name="style-transfer-writing" type="462c0819:PsiDirectoryNode" />
-              <item name="char-rnn" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,6 +232,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/textgen" />
     </key>
   </component>
@@ -308,8 +317,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1995" y="23" width="1096" height="974" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1972093" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1972093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -418,9 +428,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/oscar_wilde.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/oscar_wilde.txt" />
     <entry file="file://$PROJECT_DIR$/data/kurt_vonnegut/cats_cradle.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -449,31 +457,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/textgenrnn/datasets/reddit_rarepuppers_politics_2000.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/textgenrnn/datasets/reddit_apple_android_2000.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/textgenrnn/datasets/reddit_rarepuppers_politics_2000_context.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/textgenrnn/datasets/reddit_relationshipadvice_legaladvice_2000.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/textgenrnn/outputs/hacker_news_temp_1_0.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/textgenrnn/datasets/hacker_news_2000.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/textgenrnn/textgenrnn/toru.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/textgenrnn/datasets/reddit_rarepuppers_politics_2000.txt" />
+    <entry file="file://$PROJECT_DIR$/textgenrnn/datasets/reddit_apple_android_2000.txt" />
+    <entry file="file://$PROJECT_DIR$/textgenrnn/datasets/reddit_rarepuppers_politics_2000_context.csv" />
+    <entry file="file://$PROJECT_DIR$/textgenrnn/datasets/reddit_relationshipadvice_legaladvice_2000.txt" />
+    <entry file="file://$PROJECT_DIR$/textgenrnn/outputs/hacker_news_temp_1_0.txt" />
+    <entry file="file://$PROJECT_DIR$/textgenrnn/datasets/hacker_news_2000.txt" />
+    <entry file="file://$PROJECT_DIR$/textgenrnn/textgenrnn/toru.py" />
     <entry file="file://$PROJECT_DIR$/textgen/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -482,13 +472,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/textgen/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/textgen/model_training.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -501,9 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="189" column="59" selection-start-line="189" selection-start-column="59" selection-end-line="189" selection-end-column="59" />
-          <folding>
-            <element signature="e#25#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -511,29 +492,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/textgenrnn/textgenrnn/textgenrnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#25#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/textgenrnn/textgenrnn/textgenrnn.py" />
     <entry file="file://$PROJECT_DIR$/textgen/AttentionWeightedAverage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/min-char-rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/oscar_wilde_lines.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -544,19 +524,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/oscar_wilde_lines.txt">
+    <entry file="file://$PROJECT_DIR$/web_interface.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3064">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/min-char-rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="99" column="32" lean-forward="true" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
+        <state relative-caret-position="345">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding>
-            <marker date="1540146404000" expanded="true" signature="929:934" ph="..." />
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
