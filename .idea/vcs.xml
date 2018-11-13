@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Shakespearizing-Modern-English" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Shakespearizing-Modern-English/tmp/Shakespearizing-Modern-English" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shakespearize" vcs="Git" />
   </component>
 </project>
