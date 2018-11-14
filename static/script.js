@@ -1,5 +1,5 @@
 $('#translateButton').click(function(){
-    document.getElementById("shakespeareanEnglish").innerHTML = document.getElementById("modernEnglish").value;
+    document.getElementById("modernEnglish").innerHTML = document.getElementById("shakespeareanEnglish").value;
 });
 
 $(function() {
@@ -8,7 +8,7 @@ $(function() {
         $.ajax({
             type: "POST",
             url: "/translate",
-            data: $('textarea#modernEnglish').val(),
+            data: $('textarea#shakespeareanEnglish').val(),
             success: function(result) {
                 console.log("ojbk");
             }

@@ -12,15 +12,15 @@
     </div>
     <div style="text-align: center">
         <div class="text-box">
-            <p>When you say: </p>
+            <p>When Shakespeare says: </p>
             <form action="{{ url_for('translate') }}" method="post">
-                <textarea id="modernEnglish" name="original" rows="4" cols="50">{{ o }}</textarea>
-                <button id="translateButton" style="display: block">Shakespearize</button>
+                <textarea id="shakespeareanEnglish" name="original" rows="4" cols="50">{{ o }}</textarea>
+                <button id="translateButton" style="display: block">Modernize</button>
             </form>
         </div>
         <div class="text-box">
-            <p>Shakespeare says: </p>
-            <div id="shakespeareanEnglish">{{ t }}</div>
+            <p>He meant: </p>
+            <div id="modernEnglish">{{ t }}</div>
         </div>
     </div>
 </body>

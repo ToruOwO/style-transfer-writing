@@ -6,6 +6,7 @@ import heapq
 import re
 import numpy as np
 import scipy.stats
+import sys
 
 
 ################################################################ Beam search data structures
@@ -77,12 +78,12 @@ class OutputSentence(object):
 			return -1
 		else:
 			return 1
-	
+
 	# For Python 3 compatibility (__cmp__ is deprecated).
 	def __lt__(self, other):
 		assert isinstance(other, OutputSentence)
 		return self.score < other.score
-	
+
 	# Also for Python 3 compatibility.
 	def __eq__(self, other):
 		assert isinstance(other, OutputSentence)
@@ -124,11 +125,35 @@ def getBlue(validOutFile_name, original_data_path, BLEUOutputFile_path, decoder_
 
 
 
+def tokenize(sentence):
+    tokens = []
+    token = ''
+    for c in sentence:
+        if c in '.,()?':
+            if token != '':
+                tokens.append(token.lower())
+            token = ''
+            tokens.append(c)
+        elif c == ' ':
+            if token != '':
+                tokens.append(token.lower())
+            token = ''
+        else:
+            token += c
+
+    if token != '':
+        tokens.append(token.lower())
+
+    sys.stderr.write(str(tokens) + "\n")
+    sys.stderr.flush()
+
+    return tokens
+
 #############################################################
 def preprocessText(list_of_sentences, preprocessing_obj):
 
 	preprocessing = preprocessing_obj
-	all_txt_tokenized = [ txt.split() for txt in list_of_sentences] #TO DO: nltk tokenization
+	all_txt_tokenized = [ tokenize(txt) for txt in list_of_sentences] #TO DO: nltk tokenization
 	all_txt_indexed = [ ]
 	for txt in all_txt_tokenized:
 		tmp = []

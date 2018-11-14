@@ -22,7 +22,7 @@ data_src = config.data_dir
 class Demo:
 
 	def loadModel(self, saved_model_path, inference_type="greedy"):
-		
+
 		# params
 		params = {}
 		params['embeddings_dim'] =  config.embeddings_dim
@@ -45,7 +45,7 @@ class Demo:
 		params['use_context_for_out'] = config.use_context_for_out
 		params['batch_size'] = 32
 
-		
+
 		#	data = pickle.load(open(data_src + "data.obj","r") )
 		preprocessing = pickle.load(open(data_src + "preprocessing.obj","r") )
 
@@ -66,9 +66,9 @@ class Demo:
 					decoder_embedding_matrix[idx]=pretrained_embeddings[token]
 				else:
 					not_found_count+=1
-			#print "not found count = ", not_found_count 
-			params['encoder_embeddings_matrix'] = encoder_embedding_matrix 
-			params['decoder_embeddings_matrix'] = decoder_embedding_matrix 
+			#print "not found count = ", not_found_count
+			params['encoder_embeddings_matrix'] = encoder_embedding_matrix
+			params['decoder_embeddings_matrix'] = decoder_embedding_matrix
 
 			if params['use_additional_info_from_pretrained_embeddings']:
 				additional_count=0
@@ -90,13 +90,13 @@ class Demo:
 
 		rnn_model = solver.Solver(params, buckets=None, mode='inference')
 		_ = rnn_model.getModel(params, mode='inference', reuse=False, buckets=None)
-		
+
 
   		sess = tf.Session()
   		saver = tf.train.Saver()
 		saved_model_path = params['saved_model_path']
   		saver.restore(sess,  saved_model_path ) #"./tmp/model39.ckpt")
-  		
+
   		self.sess = sess
 		self.rnn_model = rnn_model
 		self.params = params
@@ -105,7 +105,7 @@ class Demo:
 
 
 	def getOutput(self, all_txt = ["Is this your book ?"]):
-		
+
 		all_txt_indexed = utilities.preprocessText(all_txt, self.preprocessing)
 		sequences_input = pad_sequences(all_txt_indexed, maxlen=config.max_input_seq_length, padding='pre', truncating='post')
 		decoder_outputs_inference, _ = self.rnn_model.solveAll(self.params, sequences_input, None, self.preprocessing.idx_to_word, sess=self.sess, inference_type=self.inference_type, print_progress=False)
@@ -120,7 +120,7 @@ class Demo:
 
 def run_demo(inp):
 	demo = Demo()
-	demo.loadModel("./tmp/seq2seq8.ckpt")
+	demo.loadModel("./tmp/seq2seq10.ckpt")
 	return demo.getOutput(inp)
 
 	# text = open(config.data_dir+"style_transfer_test.in","r").readlines()

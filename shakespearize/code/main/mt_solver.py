@@ -4,6 +4,7 @@ import utilities
 from utilities import *
 import configuration
 import math
+import sys
 
 # pointer
 if configuration.use_pointer:
@@ -196,6 +197,8 @@ class Solver:
 					#print "decoder_ground_truth_outputs[i] = ",decoder_ground_truth_outputs[i]
                                         if i<len(decoder_ground_truth_outputs):
                                                 if print_gt:
+					                inp = [ reverse_vocab[j] for j in encoder_inputs[i] if reverse_vocab[j]!="padword"]
+					                print "INP: ", inp
 					                gt = [ reverse_vocab[j] for j in decoder_ground_truth_outputs[i] if reverse_vocab[j]!="padword"]
 					                print "GT: ", gt
 					        print "prediction: ",ret
@@ -238,7 +241,8 @@ class Solver:
 			encoder_inputs_cur = encoder_inputs[i*batch_size:(i+1)*batch_size]
 			if decoder_ground_truth_outputs is None:
 				decoder_ground_truth_cur = None
-                        # decoder_ground_truth_cur = decoder_ground_truth_outputs[i*batch_size:(i+1)*batch_size]
+			else:
+                        	decoder_ground_truth_cur = decoder_ground_truth_outputs[i*batch_size:(i+1)*batch_size]
 			lim = len(encoder_inputs_cur)
 			if len(encoder_inputs_cur)<batch_size:
 				gap = batch_size - len(encoder_inputs_cur)
@@ -254,7 +258,7 @@ class Solver:
                 #Printing out attention matrix - Required for UNK replacement during post-processing
                 import pickle
                 pickle.dump(alpha,open("alpha.p","wb"))
-                print "Dumped alphas"
+                # print "Dumped alphas"
 
 		return decoder_outputs_inference, decoder_ground_truth_outputs
 
