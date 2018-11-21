@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>6.S198 Final Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
@@ -10,16 +11,24 @@
     <div>
         <img src="{{ url_for('static',filename='shakespeare.jpg') }}" class="center">
     </div>
+    <br>
+    <div class="row justify-content-md-center">
+        <button id="sButton" type="button" class="btn btn-light">Shakespearize</button>
+        <button id="mButton" type="button" class="btn btn-light">Modernize</button>
+    </div>
+
     <div style="text-align: center">
         <div class="text-box">
-            <p>When Shakespeare says: </p>
+            <p id="text-one">When Shakespeare says: </p>
             <form action="{{ url_for('translate') }}" method="post">
-                <textarea id="shakespeareanEnglish" name="original" rows="4" cols="50">{{ o }}</textarea>
-                <button id="translateButton" style="display: block">Modernize</button>
+                <textarea class="form-control" id="shakespeareanEnglish" name="original" rows="4" cols="50">{{ o }}</textarea>
+                <br>
+                <button type="button" class="btn btn-outline-dark" id="translateButton" style="display: block">
+                    Modernize</button>
             </form>
         </div>
         <div class="text-box">
-            <p>He meant: </p>
+            <p id="text-two">He meant: </p>
             <div id="modernEnglish">{{ t }}</div>
         </div>
     </div>
